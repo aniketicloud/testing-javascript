@@ -1,15 +1,15 @@
-const { sum, substract } = require('../math');
+const {sum, subtract} = require('../math')
 
-let expected, actual;
+let result, expected
 
-actual = sum(7, 3)
+result = sum(3, 7)
 expected = 10
-if (actual !== expected) {
-  throw new Error(`${actual} is not equal to ${expected}`);
+if (result !== expected) {
+  throw new Error(`${result} is not equal to ${expected}`)
 }
 
-actual = substract(7, 3);
-expected = 4;
-if (actual !== expected) {
-  throw new Error(`${actual} is not equal to ${expected}`)
+result = subtract(7, 3)
+expected = 4
+if (result !== expected) {
+  throw new Error(`${result} is not equal to ${expected}`)
 }
