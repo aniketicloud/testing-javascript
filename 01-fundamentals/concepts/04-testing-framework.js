@@ -1,18 +1,16 @@
 const { sum, subtract, greaterThan } = require("../math");
 
-function sumTest() {
+test("sum adds numbers", () => {
   const actual = sum(3, 7);
   const expected = 10;
   expect(actual).toBe(expected);
-}
-test("sum adds numbers", sumTest);
+});
 
-function subtractTest() {
+test("subtract subtracts numbers", () => {
   const actual = subtract(3, 7);
   const expected = -4;
   expect(actual).toBe(expected);
-}
-test("subtract subtracts numbers", subtractTest);
+});
 
 function test(title, callback) {
   try {
