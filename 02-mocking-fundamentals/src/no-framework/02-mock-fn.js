@@ -7,7 +7,7 @@ test("returns winner", () => {
   utils.getWinner = (p1, p2) => p1;
 
   const winner = thumbWar("Nike", "Percy");
-  expect(winner).toBe(Nike);
+  expect(winner).toBe("Nike");
 
   // cleanup
   utils.getWinner = originalGetWinner;
